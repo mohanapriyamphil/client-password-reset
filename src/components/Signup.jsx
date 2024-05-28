@@ -12,8 +12,8 @@ const Signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        Axios.post('https://backend-password-reset-ybz2.onrender.com/auth/signup', {
-        // Axios.post('http://localhost:3000/auth/signup', {
+        // Axios.post('https://backend-password-reset-ybz2.onrender.com/auth/signup', {
+        Axios.post('http://localhost:3000/auth/signup', {
           username,
           email,
           password,

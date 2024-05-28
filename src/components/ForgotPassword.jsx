@@ -10,8 +10,8 @@ const ForgotPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    Axios.post("https://backend-password-reset-ybz2.onrender.com/auth/forgotPassword", {
-    // Axios.post("http://localhost:3000/auth/forgotPassword", {
+    // Axios.post("https://backend-password-reset-ybz2.onrender.com/auth/forgotPassword", {
+    Axios.post("http://localhost:3000/auth/forgotPassword", {
       email,
     })
       .then(response => {

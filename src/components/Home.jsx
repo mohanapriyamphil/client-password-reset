@@ -7,8 +7,8 @@ const Home = () => {
   Axios.defaults.withCredentials = true;
 
   const handleLogout = () => {
-    Axios.get("https://backend-password-reset-ybz2.onrender.com/auth/logout")
-    // Axios.get("http://localhost:3000/auth/logout")
+    // Axios.get("https://backend-password-reset-ybz2.onrender.com/auth/logout")
+    Axios.get("http://localhost:3000/auth/logout")
       .then((res) => {
         if (res.data.status) {
           navigate("/login");
