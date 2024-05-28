@@ -11,7 +11,8 @@ const ResetPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    Axios.post("http://localhost:3000/auth/resetPassword/" + token, {
+    Axios.post("https://backend-password-reset-ybz2.onrender.com/auth/resetPassword/" + token, {
+    // Axios.post("http://localhost:3000/auth/resetPassword/" + token, {
       password,
     })
       .then((response) => {
