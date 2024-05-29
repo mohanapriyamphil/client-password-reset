@@ -4,7 +4,7 @@ import Axios from "axios";
 const Home = () => {
   const navigate = useNavigate();
 
-  Axios.defaults.withCredentials = true;
+  // Axios.defaults.withCredentials = true;
 
   const handleLogout = () => {
     Axios.get("https://backend-password-reset-ybz2.onrender.com/auth/logout")

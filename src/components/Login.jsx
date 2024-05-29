@@ -10,7 +10,7 @@ const Login = () => {
   
   const navigate = useNavigate()
   
-  Axios.defaults.withCredentials = true;
+  // Axios.defaults.withCredentials = true;
   const handleSubmit = (e) => {
     e.preventDefault()
     Axios.post('https://backend-password-reset-ybz2.onrender.com/auth/login', {
